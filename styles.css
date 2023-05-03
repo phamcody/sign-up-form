@@ -1,0 +1,60 @@
+* {
+    
+}
+
+:root {
+    font-family: 'JelleeBold';
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(255, 251, 251);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* LEFT SECTION */
+
+.logo-container {
+    height: 100vh;
+    width: 100vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2 {
+    font-size: 4em;
+    margin: 0;
+    color: #5ec1df;
+    letter-spacing: .5rem;
+    margin-bottom: -4.5rem;
+}
+
+.sign-up {
+    font-size: 1.5rem;
+    color: #5ec1df;
+    text-shadow: #92aca4;
+}
+
+.credit {
+    color: #973d20;
+}
+
+.credit:visited {
+    color: #3f241b
+}
+
+/* RIGHT SECTION */
+
+.right-container {
+    color: rgb(255, 251, 251);
+    display: flex;
+    flex: 1.5;
+    background-color: #fbea5e;
+    justify-content: center;
+}
