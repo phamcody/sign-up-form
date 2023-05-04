@@ -105,6 +105,8 @@ input {
     width: 200px;
     height: 25px;
     border-radius: 4px;
+    outline: none;
+    border-color: #ecdd50;
 }
 
 input:valid {
@@ -112,10 +114,20 @@ input:valid {
     box-shadow: 0 0 10px rgb(6, 170, 94);
 }
 
+input:focus {
+    border: 2px solid #61c3e0;
+    box-shadow: 0 0 10px #61c3e0;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid rgb(170, 6, 6);
+    box-shadow: 0 0 10px rgb(170, 6, 6);
+}
 
 .submitButton {
     background-color: #5ec1df;
-    border-radius: 5px;
+    border-radius: 20px;
+    border: none;
     font-family: 'JelleeBold';
     color: white;
     height: 75px;
