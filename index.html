@@ -21,7 +21,57 @@
     </div>
 
     <div class="right-container">
-        <h1> get started now</h1>
+        <form>
+            <h1> get started now</h1>
+        <div class="form-container">
+            <div class="rowOne">
+                <p>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="userFirstName" id="firstName" placeholder="FIRST NAME" required>
+                </p>
+    
+                <p>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="userLastName" id="lastName" placeholder="LAST NAME" required>
+                </p>
+            </div>
+
+            <div class="rowTwo">
+                <p>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="userEmail" id="email" placeholder="EMAIL" required>
+                </p>
+
+                <p>
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" name="userPhoneNumber" id="phoneNumber" placeholder="PHONE" required>
+                </p>
+            </div>
+
+            <div class="rowThree">
+                <p>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="userPassword" id="password" placeholder="PASSWORD" required minlength="6">
+                </p>
+
+                <p>
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="userPassword" id="confirmPassword" placeholder="CONFIRM PASSWORD" required minlength="6">
+                </p>
+            </div>
+
+        </div>
+
+        <div>
+            <button class="submitButton">create account</button>
+        </div>
+
+        <div class="create-account">
+            already have an account? <a class ="create-account" href="#">Log in</a>
+        </div>
+        </form>
+        
     </div>
+
 </body>
 </html>

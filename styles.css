@@ -51,10 +51,74 @@ h2 {
 
 /* RIGHT SECTION */
 
-.right-container {
+
+.right-container,
+form {
     color: rgb(255, 251, 251);
     display: flex;
+    flex-direction: column;
     flex: 1.5;
     background-color: #fbea5e;
+    gap: 35px;
     justify-content: center;
+    padding-left: 8%;
+}
+
+
+.form-container p {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowOne,
+.rowTwo,
+.rowThree {
+    display: flex;
+    gap: 12rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #973d20;
+}
+
+.create-account {
+    font-size: 1.5rem;
+    color: #973d20;
+}
+
+a[href="#"] {
+    color: #5ec1df;
+}
+
+.create-account:visited {
+    color: #3f241b
+}
+
+label {
+    color: #3f241b;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+input:valid {
+    border: 2px solid rgb(6, 170, 94);
+    box-shadow: 0 0 10px rgb(6, 170, 94);
+}
+
+
+.submitButton {
+    background-color: #5ec1df;
+    border-radius: 5px;
+    font-family: 'JelleeBold';
+    color: white;
+    height: 75px;
+    width: 300px;
+    font-size: 1rem;
 }
