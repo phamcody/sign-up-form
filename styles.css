@@ -49,6 +49,23 @@ h2 {
     color: #3f241b
 }
 
+img {
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 /* RIGHT SECTION */
 
 
@@ -133,4 +150,21 @@ input:invalid:not(:placeholder-shown) {
     height: 75px;
     width: 300px;
     font-size: 1rem;
+}
+
+
+
+.error::after {
+    color: rgb(170, 6, 6);
+    font-size: .75rem;
+    content: '*Passwords do not match';
+}
+
+p {
+    height: 76px;
+}
+
+.errorMatch {
+    border: 2px solid rgb(170, 6, 6) !important;
+    box-shadow: 0 0 10px rgb(170, 6, 6) !important;
 }
